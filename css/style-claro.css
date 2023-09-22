@@ -51,10 +51,6 @@ body {
     transition-duration: 0.1s;
 }
 
-#welcome:hover {
-    text-shadow: 0px 0px 10px #a2ff0098;
-}
-
 /*------------------ NAV ----------------------------------*/
 
 #navegacao-principal {
@@ -108,13 +104,6 @@ body {
     text-decoration: underline;
 }
 
-#botao-modo-escuto:hover {
-    color: #747474;
-}
-
-#botao-modo-claro:hover {
-    color: white;
-}
 /*-------------------- TELA -------------------------------*/
 
 main {
@@ -158,7 +147,7 @@ main {
 
 #linha-titulo {
     width: 100px;
-    border: 1px solid #40bf00;
+    border: 1px solid #1d9c00;
 }
 
 #titulo {
@@ -179,24 +168,25 @@ main {
 
 .perguntas-form input {
     width: 94%;
-    padding: 10px;
+    padding: 13px;
     margin-top: 9px;
-    padding-left: 3px;
     border-radius: 4px;
-    background-color: white;
-    border: 2px solid white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.158);
+    background-color: transparent;
+    border: none;
     transition-duration: 0.7s;
+    outline: none;
 }
 
 .perguntas-form input:focus {
-    background-color: rgb(255, 249, 239);
-    margin: 9px 0px 0px 0px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.481);
+    box-shadow: inset -0px -0px 10px rgba(0, 0, 0, 0.137);
 }
 
 #tamanho {
     margin-top: 15px;
+}
+
+.linhas-input {
+    border: 1px solid #a3ff00;
 }
 
 /*----------------- BOTÃO CALCULAR ------------------------*/
@@ -241,8 +231,9 @@ main {
 }
 
 .linhas-imc {
-    border: 1px solid #40bf00;
-    margin: 15px 0px;
+    width: 90%;
+    border: 1px solid #1d9c00;
+    margin: 15px auto;
 }
 
 #area-imc {
@@ -262,6 +253,7 @@ main {
     justify-content: center;
     color: #00670c;
     margin-bottom: 10px;
+    margin-left: 5%;
 }
 
 #caixa-imc {
@@ -278,6 +270,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 16px;
 }
 
 #links p {
