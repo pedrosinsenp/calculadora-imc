@@ -1,0 +1,299 @@
+                    /* MODO CLARO */
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap'); /* font-family: Inconsolata, sans-serif; */
+
+/*
+    CORES
+
+#00670c -> -2
+#1d9c00 -> -1
+#40bf00 -> 0
+#6ddf00 -> 1
+#a3ff00 -> 2
+
+
+#f5e6c9 -> Fundo caixa | nav
+#333030 -> Fundo caixa-imc
+
+*/
+
+/*-------------------- GERAL --------------======----------*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    transition-duration: 0.2s;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    transition-duration: 1s;
+}
+
+/*------------------ HEADER --------------------=====------*/
+
+#principal {
+    margin: 10px;
+    display: flex;
+    align-self: center;
+}
+
+#welcome {
+    color: #6ddf00;
+    font-family: Inconsolata, sans-serif;
+    cursor: default;
+    transition-duration: 0.1s;
+}
+
+#welcome:hover {
+    text-shadow: 0px 0px 10px #a2ff0098;
+}
+
+/*------------------ NAV ----------------------------------*/
+
+#navegacao-principal {
+    display: flex;
+}
+
+.navegacao {
+    background-color: #f5e6c9;
+    display: flex;
+    align-self: flex-start;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: white;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 12px 5px 12px;
+    border-radius: 10px;
+    position: relative;
+    color: black;
+}
+
+.navegacao #click-info {
+    cursor: pointer;
+    justify-content: flex-start;
+}
+
+.navegacao #click-info:hover {
+    text-decoration: underline;
+}
+
+.navegacao #perg {
+    display: none;
+    width: 150px;
+    position: absolute;
+    margin-top: 10px;
+    border: 1px solid black;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    line-height: 17px;
+    color: black;
+}
+
+.botao-modo {
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.botao-modo:hover {
+    text-decoration: underline;
+}
+
+#botao-modo-escuto:hover {
+    color: #747474;
+}
+
+#botao-modo-claro:hover {
+    color: white;
+}
+/*-------------------- TELA -------------------------------*/
+
+main {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+/*------------------ LADO  DE BAIXO -----------------------*/
+
+#lado-baixo {
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+}
+
+#lado-baixo img {
+    width: 100%;
+}
+
+/*------------------- LADO DE CIMA ------------------------*/
+
+#lado-cima {
+    background-color: #f5e6c9;
+    width: 70%;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px 30px 30px 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.164);
+}
+
+#cabecalho-lado-cima {
+    color: black;
+    display: flex;
+    font-family: Inconsolata, sans-serif;
+}
+
+#linha-titulo {
+    width: 100px;
+    border: 1px solid #40bf00;
+}
+
+#titulo {
+    margin: 16px 0px;
+}
+
+/*------------------ FORMULÁRIO ---------------------------*/
+
+#caixas-formularios {
+    margin: 14px 0px 19px 0px;
+}
+
+.perguntas-form {
+    color: black;
+    font-size: 16px;
+    font-family: Inconsolata, sans-serif;
+}
+
+.perguntas-form input {
+    width: 56%;
+    padding: 10px;
+    margin: 9px 0px 0px 18%;
+    border-radius: 4px;
+    background-color: white;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.158);
+    transition-duration: 0.7s;
+}
+
+.perguntas-form input:focus {
+    width: 96%;
+    background-color: rgb(255, 249, 239);
+    margin: 9px 0px 0px 0px;
+}
+
+.label-infos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -20px;
+}
+
+#tamanho {
+    margin-top: 15px;
+}
+
+/*----------------- BOTÃO CALCULAR ------------------------*/
+
+#area-botao-calcular {
+    display: flex;
+    justify-content: center;
+}
+
+#botao-calcular {
+    width: 270px;
+    height: 30px;
+    border-radius: 9px;
+    background-color: #1d9c00;
+    border: 1px solid #1d9c00;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.267);
+}
+
+#botao-calcular:hover {
+    background-color: #40bf00;
+    border: 1px solid #40bf00;
+    box-shadow: 0px 0px 7px #40bf0069;
+    border-radius: 8px;
+}
+
+#botao-calcular:active {
+    box-shadow: 0px 0px 10px #40bf00;
+    background-color: #4de203;
+}
+
+/*------------------ IMC ----------------------------------*/
+
+#imc {
+    height: 90px;
+    font-family: Inconsolata, sans-serif;
+}
+
+.linhas-imc {
+    border: 1px solid #40bf00;
+    margin: 15px 0px;
+}
+
+#area-imc {
+    display: flex;
+    color: black;
+    font-weight: bold;
+}
+
+#mensagem-imc {
+    display: flex;
+    align-self: center;
+    margin-bottom: 6px;
+}
+
+#seu-imc {
+    display: flex;
+    justify-content: center;
+    color: #00670c;
+    margin-bottom: 10px;
+}
+
+#caixa-imc {
+    margin: auto;
+}
+
+#seu-estado-imc {
+    font-size: 18px;
+}
+
+/*----------------- LINKS ---------------------------------*/
+
+#links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#links p {
+    margin-bottom: 7px;
+    font-family: Inconsolata, sans-serif;
+}
+
+#links a {
+    color: #00670c;
+    text-decoration: none;
+}
+
+#links a:hover {
+    text-decoration: underline;
+}

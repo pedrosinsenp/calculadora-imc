@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="shortcut icon" href="favicon/img-site-logo.ico" type="image/x-icon">
+    <div id="modos">
+        <link rel="stylesheet" href="css/style-escuro.css" id="css-escuro">
+    </div>
+</head>
+<body>
+    <header id="principal">
+        <div id="welcome">
+            <h1>
+                Bem-vindo!
+            </h1>
+        </div>
+    </header>
+    <nav id="navegacao-principal">
+        <nav class="navegacao">
+            <div id="info-imc-significado">
+                <h1 onclick="clickinfo()" id="click-info">
+                    O que é IMC?
+                </h1>
+                <p id="perg">
+                    O IMC é um índice que mede se você está abaixo, dentro ou acima do peso, de acordo com a relação entre seu peso e altura. É só dividir o peso (em quilos) pelo quadrado da altura (em metros), que é obtido pela multiplicação da altura por ela mesma. Então, a fórmula fica assim: IMC = Peso / Altura².
+                </p>
+            </div>
+        </nav>
+        <nav class="navegacao">
+            <div>
+                <h1>
+                    Modos: <span onclick="modo_escuro()" class="botao-modo" id="botao-modo-escuto">Escuro</span> / <span onclick="modo_claro()" class="botao-modo" id="botao-modo-claro">Claro</span>
+                </h1>
+            </div>
+        </nav>
+    </nav>
+    <main id="corpo">
+        <div id="lado-cima">
+            <header id="cabecalho-lado-cima">
+                <h1 id="titulo">
+                    Calculadora - IMC
+                    <hr id="linha-titulo">
+                </h1>
+            </header>
+            <article id="formulario">
+                <div id="caixas-formularios">
+                    <div class="perguntas-form" id="peso">
+                        <label for="peso" class="label-infos">Peso em Kg</label></br>
+                        <input type="number" name="peso" id="input-peso" placeholder="Kg">
+                    </div>
+                    <div class="perguntas-form" id="tamanho">
+                        <label for="metros" class="label-infos">Altura em metros</label></br>
+                        <input type="number" name="metros" id="input-altura" placeholder="Metros">
+                    </div>
+                </div>
+                <div id="area-botao-calcular">
+                    <input type="button" id="botao-calcular" value="Calcular" onclick="calcular()" onmouseenter="entrar_calcular()">
+                </div>
+                <div id="imc">
+                    <hr class="linhas-imc">
+                    <div id="area-imc">
+                        <p id="mensagem-imc">
+                            Seu IMC:
+                        </p>
+                        <div id="caixa-imc">
+                            <div id="seu-imc">
+                            </div>
+                            <div id="seu-estado-imc">
+                                <p>
+                                    IMC
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="linhas-imc">
+                </div>
+            </article>
+            <aside id="links">
+                <p>
+                    <a href="https://qbemqfaz.com.br/vida-equilibrada/tabela-imc?gclid=EAIaIQobChMI-O7yhLnEgAMVDlKRCh3j-Am_EAAYASAAEgJSRfD_BwE" target="_blank" rel="external">
+                        Mais informações sobre o IMG 🔗
+                    </a>
+                </p>
+                <p>
+                    <a href="https://github.com/pedrosinsenp" target="_blank" rel="external">github.com/pedrosinsenp 🔗</a>
+                </p>
+            </aside>
+        </div>
+        <div id="lado-baixo">
+            <img src="imagens/image-trainer.png" alt="imagem" id="img-principal" loading="lazy">
+        </div>
+    </main>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
