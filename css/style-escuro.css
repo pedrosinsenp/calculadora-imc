@@ -95,6 +95,8 @@ body {
     padding: 5px;
     border-radius: 5px;
     line-height: 17px;
+    background-color: white;
+    color: black;
 }
 
 .botao-modo {
@@ -176,9 +178,10 @@ main {
 }
 
 .perguntas-form input {
-    width: 56%;
+    width: 94%;
     padding: 10px;
-    margin: 9px 0px 0px 18%;
+    margin-top: 9px;
+    padding-left: 3px;
     border-radius: 4px;
     background-color: #494949;
     border: 2px solid #494949;
@@ -188,15 +191,9 @@ main {
 }
 
 .perguntas-form input:focus {
-    width: 96%;
     background-color: #3a3a3a;
     margin: 9px 0px 0px 0px;
-}
-
-.label-infos {
-    display: flex;
-    justify-content: center;
-    margin-bottom: -20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.481);
 }
 
 #tamanho {
@@ -212,7 +209,7 @@ main {
 
 #botao-calcular {
     width: 270px;
-    height: 30px;
+    height: 34px;
     border-radius: 9px;
     background-color: #1d9c00;
     border: 1px solid #1d9c00;
@@ -229,11 +226,6 @@ main {
     background-color: #40bf00;
     box-shadow: 0px 0px 7px #40bf0069;
     border-radius: 8px;
-}
-
-#botao-calcular:active {
-    box-shadow: 0px 0px 10px #40bf00;
-    background-color: #4de203;
 }
 
 /*------------------ IMC ----------------------------------*/
@@ -288,7 +280,7 @@ main {
 }
 
 #links a {
-    color: #00670c;
+    color: #1d9c00;
     text-decoration: none;
 }
 

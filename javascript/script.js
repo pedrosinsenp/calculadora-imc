@@ -19,7 +19,7 @@ function calcular() {
         } else if (imc < 25) {
             seu_imc.innerHTML = imc
             seu_estado.innerHTML = 'Peso normal'
-            seu_estado.style.color = '#00670c'
+            seu_estado.style.color = '#1d9c00'
         } else if (imc < 30) {
             seu_imc.innerHTML = imc
             seu_estado.innerHTML = 'Acima do peso'
