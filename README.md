@@ -9,5 +9,5 @@
 
 ## Como usar?
 - Clone o repositório e abra o arquivo index.html em seu navegador
-  OU
+  \nOU
 - Acesse o site https://pedrosinsenp.github.io/calculadora-imc/
