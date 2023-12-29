@@ -8,5 +8,6 @@
 - Depois, basta apertar o botão de calcular e descobrir seu IMC!
 
 ## Como usar?
-- Clone o repositório e abra o arquivo index.html em seu navegador
+- Clone o repositório e abra o arquivo index.html em seu navegador<br/>
+OU
 - Acesse o site https://pedrosinsenp.github.io/calculadora-imc/
