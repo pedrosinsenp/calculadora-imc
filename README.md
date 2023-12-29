@@ -9,6 +9,4 @@
 
 ## Como usar?
 - Clone o repositório e abra o arquivo index.html em seu navegador
-  ##
-  OU
 - Acesse o site https://pedrosinsenp.github.io/calculadora-imc/
