@@ -53,13 +53,3 @@ function clickinfo() {
         info.style.display = 'block'
     }
 }
-
-function modo_claro() {
-    let modo_css = document.getElementById('modos')
-    modo_css.innerHTML = '<link rel="stylesheet" href="css/style-claro.css" id="css-escuro">'
-}
-
-function modo_escuro() {
-    let modo_css = document.getElementById('modos')
-    modo_css.innerHTML = '<link rel="stylesheet" href="css/style-escuro.css" id="css-escuro">'
-}
